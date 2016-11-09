@@ -1,3 +1,4 @@
 #!/bin/bash
-my_dir=`dirname $0`
+`my_dir=`dirname $0`
 $my_dir/parallel "ngrok http 5000" "webhook" "bundle exec guard start -i"
+`

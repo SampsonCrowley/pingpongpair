@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env ruby
 
-for cmd in "$@"; do {
+`for cmd in "$@"; do {
   echo "Process \"$cmd\" started";
   $cmd & pid=$!
   PID_LIST+=" $pid";
@@ -13,4 +13,4 @@ echo "Parallel processes have started";
 wait $PID_LIST
 
 echo
-echo "All processes have completed";
+echo "All processes have completed";`
