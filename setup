@@ -12,3 +12,4 @@ cp .gitignore ../
 cd ..
 bundle install
 rm -rf pingpongpair
+exe/pingpong

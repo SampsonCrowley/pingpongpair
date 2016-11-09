@@ -17,7 +17,7 @@ cd into the pingpongpair dir:
 
 run ./setup:
 
-    $ gem install pingpongpairing
+    $ ./setup
 
 run the pingpong executable
 
