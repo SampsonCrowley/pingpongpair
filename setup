@@ -1,11 +1,14 @@
-cp -r exe ../
+#!/bin/bash
+mkdir ../exe
 mkdir ../lib
 mkdir ../pair
 mkdir ../spec
+cp exe/* ../exe/
 cp spec/* ../spec/
 cp Gemfile ../
 cp Guardfile ../
+cp .rspec ../
+cp .gitignore ../
 cd ..
 bundle install
-bundle exec rspec init
-bundle exec guard init
+rm -rf pingpongpair

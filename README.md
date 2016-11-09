@@ -1,34 +1,45 @@
 # Pingpongpairing
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pingpongpairing`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
-Add this line to your application's Gemfile:
+requires ngrok to be installed
+[advanced user tunneling made easy](https://ngrok.com/download)
 
-```ruby
-gem 'pingpongpairing'
+clone this repo into your project folder
+
+```git
+git clone https://github.com/SampsonCrowley/pingpongpair.git
 ```
 
-And then execute:
+cd into the pingpongpair dir:
 
-    $ bundle
+    $ cd pingpongpair
 
-Or install it yourself as:
+run ./setup:
 
     $ gem install pingpongpairing
 
-## Usage
+run the pingpong executable
 
-TODO: Write usage instructions here
+    $ exe/pingpong
 
-## Development
+in Guardfile change the url in line 20 to your pair's ngrok URL
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake true` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+  `bundle exec exe/sendevent **"http://localhost:5000"** #{m[0]}`
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+to:
+
+  `bundle exec exe/sendevent **http://27aa2ed0.ngrok.io** #{m[0]}`
+
+
+## To Stop the servers
+
+    $ press ctrl^c until you are bash at your bash line
+
+## Important Notes
+
+The "ping" a.k.a. test writer should write tests in the pair folder.
+files will added to the Test Writer's spec folder on demand
 
 ## Contributing
 
