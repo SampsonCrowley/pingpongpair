@@ -19,6 +19,10 @@ run ./setup:
 
     $ ./setup
 
+delete the pingpongpair dir. you don't need it now
+
+    $ rm -r pingpongpair
+
 run the pingpong executable
 
     $ exe/pingpong
