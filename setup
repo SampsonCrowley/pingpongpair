@@ -1,9 +1,6 @@
 #!/bin/bash
-mkdir ../exe
 mkdir ../lib
-mkdir ../pair
 mkdir ../spec
-cp exe/* ../exe/
 cp spec/* ../spec/
 cp Gemfile ../
 cp Guardfile ../

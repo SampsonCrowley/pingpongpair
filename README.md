@@ -1,54 +1,31 @@
-# Pingpongpairing
+# Ruby Dev Setup
 
 ## Installation
 
-requires ngrok to be installed
-[advanced user tunneling made easy](https://ngrok.com/download)
 
 clone this repo into your project folder
 
 ```git
-git clone https://github.com/SampsonCrowley/pingpongpair.git
+git clone https://github.com/SampsonCrowley/ruby_dev_setup.git
 ```
 
-cd into the pingpongpair dir:
+cd into the ruby_dev_setup dir:
 
-    $ cd pingpongpair
+    $ cd ruby_dev_setup
 
 run ./setup:
 
     $ ./setup
 
-delete the pingpongpair dir. you don't need it now
+delete the ruby_dev_setup dir. you don't need it now
 
     $ cd ..
-    $ rm -r pingpongpair
+    $ rm -r ruby_dev_setup
 
-run the pingpong executable
-
-    $ exe/pingpong
-
-in Guardfile change the url in line 20 to your pair's ngrok URL
-
-  `bundle exec exe/sendevent **"http://localhost:5000"** #{m[0]}`
-
-to:
-
-  `bundle exec exe/sendevent **http://27aa2ed0.ngrok.io** #{m[0]}`
-
-
-## To Stop the servers
-
-    $ press ctrl^c until you are bash at your bash line
-
-## Important Notes
-
-The "ping" a.k.a. test writer should write tests in the pair folder.
-files will added to the Test Writer's spec folder on demand
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/pingpongpairing.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ruby_dev_setuping.
 
 
 ## License

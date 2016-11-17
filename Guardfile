@@ -13,10 +13,3 @@ guard :rspec, cmd: "bundle exec rspec" do
     "spec/#{m[1]}.rb"
   end
 end
-
-guard :shell do
-  watch %r{^pair/.*\.rb$} do |m|
-    n m[0], 'Changed'
-    `bundle exec exe/sendevent "http://localhost:5000" #{m[0]}`
-  end
-end
