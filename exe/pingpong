@@ -1,3 +1,0 @@
-#!/bin/bash
-my_dir=`dirname $0`
-$my_dir/parallel "$my_dir/tunnel" "$my_dir/webhook" "bundle exec guard start -i"
